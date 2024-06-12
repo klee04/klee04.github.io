@@ -3,16 +3,70 @@
 <html>
     <head> 
         <meta charset="utf-8">
-        <title>Keon's Personal Website</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Keon Lee's Personal Website</title>
+        <link rel="stylesheet" href="static/style.css">
+        <script src="static/script.js"></script>
     </head>
 
     <body> 
-        <h1>Welcome to Keon Lee's Personal Website</h1>
+        <div id="root">
+            <section class="homepage">
+                <div class="homepage-container">
+                    <div class="homepage-item">
+                        <h1 class="homepage-text">
+                                Hello. 
+                                <br>
+                                I'm Keon! 
+                        </h1>
+                    </div>
+                </div>
+            </section>
 
-        <p>
-            This website is currently underconstruction 
-            and will be updated soon.
-        </p>
+            <br>
+
+            <section class="aboutMe">
+                <div class="aboutMe-container">
+                    <div class="aboutMe-item">
+                        <h2 class="aboutMe-text">
+                            About Me
+                        </h2>
+                        <h1 class="aboutMe-text">
+                            Who Am I?
+                        </h1>
+                        <p class="aboutMe-text">
+                            You can reach me at my 
+                            <b><a href="email:keon.lee0404@gmail.com">Email</a></b>
+                            or 
+                            <b><a href="https://www.linkedin.com/in/keon-lee04/">LinkedIn</a></b>
+                            to chat about any opportunities or just to say hi!
+                        </p>
+                    </div>
+
+                    <div class="aboutMeBox-subcontainer">
+                        <div class="aboutMeBox-img">
+                            <img src="static/img/personalimage.jpg">
+                        </div>
+
+                        <div class="aboutMeBox-list">
+                            <ul>
+                                <li>
+                                    I'm in my third year at Queen's University in 
+                                    Kingston, ON, majoring in Engineering Physics
+                                    with a specialization in Computing.
+                                </li>
+                                <li>
+                                    I'm passionate about software development and 
+                                    data science, and I'm always looking for new 
+                                    opportunities to learn and grow.
+                                </li>
+                                <li>
+                                    Hobbies: Hockey, video games, 3D printing, and Movies
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </body>
 </html>
