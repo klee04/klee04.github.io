@@ -5,6 +5,20 @@ body {
     font-size: 16px;
 }
 
+/* Larger screens */
+@media (min-width: 992px) {
+    body {
+      font-size: 18px;
+    }
+  } 
+  
+  /* Smaller tablets and mobiles */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
 .homepage-container {
     background-image: linear-gradient(to bottom right, red, yellow);
     display: flex;
@@ -35,6 +49,7 @@ body {
     left: 0;  
     height: 100vh;
     width: 100%;   
+    font-size: 1.5rem;
 }
 
 .aboutMe-text {
@@ -63,6 +78,7 @@ p a {
     background-color: #5D76A9;
     color: white;
     width: 75%;
+    height: 50%
 }
 
 .aboutMeBox-list {
@@ -74,8 +90,8 @@ p a {
 
 img {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 20rem;
+    height: 20rem;
     margin: 0.5rem;
 }
 
