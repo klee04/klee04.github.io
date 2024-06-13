@@ -52,7 +52,12 @@ p a {
     text-align: left;
 }
 
-.about-skill-icon {
+.about-skill-text {
     color: #f0f0f0;
+}
+
+.about-skill-icon {
+    width: 5rem;
+    height: 5rem;
 }
 
