@@ -18,11 +18,11 @@ body {
 }
 
 .about-section {
-    background-color: #00004d;
+    background-color: #152238;
 }
 
 .about-heading-section {
-    padding-top: 12vh;
+    padding-top: 15vh;
 }
 
 h2.about-heading-text {
@@ -42,9 +42,9 @@ p a {
 }
 
 .about-panel-section {
-    background-color: #113065;
+    background-color: #1c2e4a;
     padding: 5vw;
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 
 .about-main-list {
@@ -55,3 +55,4 @@ p a {
 .about-skill-icon {
     color: #f0f0f0;
 }
+
