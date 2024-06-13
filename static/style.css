@@ -21,19 +21,19 @@ body {
     background-color: #00004d;
 }
 
-.about-starting-section {
-    padding-top: 15vh;
+.about-heading-section {
+    padding-top: 12vh;
 }
 
-h2.about-starting-text {
+h2.about-heading-text {
     color: #5D76A9;
 }
 
-.about-starting-text {
+.about-heading-text {
     color: #f0f0f0;
 }
 
-p.about-starting-text {
+p.about-heading-text {
     font-size: 0.95rem;
 }
 
@@ -41,13 +41,17 @@ p a {
     color: #f0f0f0
 }
 
-.about-main-section {
+.about-panel-section {
     background-color: #113065;
     padding: 5vw;
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 
 .about-main-list {
     color: #f0f0f0;
     text-align: left;
+}
+
+.about-skill-icon {
+    color: #f0f0f0;
 }
