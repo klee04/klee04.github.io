@@ -62,7 +62,7 @@
                         </div>
                     </div>
 
-                    <div class="container-sm about-panel-section rounded">
+                    <div class="container-sm about-panel-section rounded-5">
                         <div class="row">
                             <div class="col-sm-4 d-flex align-items-center justify-content-center">
                                 <img src="static/img/personalimage.jpg" class="img-fluid rounded-circle" alt="Keon Lee Image">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
 
-                    <div class="container-sm about-panel-section rounded">
+                    <div class="container-sm about-panel-section rounded-5">
                         <h1>
                             <span class="fw-bold" style="color: white;">Coding Languages/Frameworks</span>
                         </h1>
@@ -176,7 +176,7 @@
                                 <img class="about-skill-icon" src="static/img/circuiticon.png"/>
                             </div>
                             <div class="col-sm-2">
-                                <h3 class="about-skill-text fw-bold fs-5">Macine Learning</h3>
+                                <h3 class="about-skill-text fw-bold fs-5">Machine Learning</h3>
                                 <img class="about-skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
                             </div>
                             <div class="col-sm-2">
@@ -206,64 +206,106 @@
                         </div>
                     </div>
 
-                    <div class="container-sm about-panel-section rounded">
+                    <div class="container-sm rounded-5 about-carousel">
                         <!-- Carousel wrapper -->
-                        <div id="carouselMaterialStyle" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
+                        <div id="work-carousel" class="carousel slide" data-bs-ride="carousel">
                             <!-- Indicators -->
                             <div class="carousel-indicators">
-                                <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active" aria-current="true"
-                                    aria-label="Slide 1"></button>
-                                <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#work-carousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#work-carousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#work-carousel" data-bs-slide-to="2"></button>
                             </div>
 
                             <!-- Inner -->
                             <div class="carousel-inner rounded-5 shadow-4-strong">
                                 <!-- Single item -->
-                                <div class="carousel-item active">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100"
-                                        alt="Sunset Over the City" />
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
+                                <div class="carousel-item active about-carousel-item">
+                                    <p style="color: white;">
+                                        <b>Software Developer Intern</b>
+                                        <br>
+                                        <b>Company:</b> <a href="https://www.3ds.com/">Dassault Systèmes</a>
+                                        <br>
+                                        <b>Duration:</b> May 2021 - August 2021
+                                        <br>
+                                        <b>Location:</b> Toronto, ON
+                                        <br>
+                                        <br>
+                                    </p>
                                 </div>
 
                                 <!-- Single item -->
-                                <div class="carousel-item">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100"
-                                        alt="Canyon at Nigh" />
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second slide label</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </div>
+                                <div class="carousel-item about-carousel-item">
+                                    <p>
+                                        <b>Software Developer Intern</b>
+                                        <br>
+                                        <b>Company:</b> <a href="https://www.3ds.com/">Dassault Systèmes</a>
+                                        <br>
+                                        <b>Duration:</b> May 2021 - August 2021
+                                        <br>
+                                        <b>Location:</b> Toronto, ON
+                                        <br>
+                                        <br>
+                                    </p>
                                 </div>
 
                                 <!-- Single item -->
-                                <div class="carousel-item">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100"
-                                        alt="Cliff Above a Stormy Sea" />
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                    </div>
+                                <div class="carousel-item about-carousel-item">
+                                    <p>
+                                        <b>Software Developer Intern</b>
+                                        <br>
+                                        <b>Company:</b> <a href="https://www.3ds.com/">Dassault Systèmes</a>
+                                        <br>
+                                        <b>Duration:</b> May 2021 - August 2021
+                                        <br>
+                                        <b>Location:</b> Toronto, ON
+                                        <br>
+                                        <br>
+                                    </p>
                                 </div>
                             </div>
-                            <!-- Inner -->
 
                             <!-- Controls -->
-                            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#work-carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <button class="carousel-control-next" type="button" data-bs-target="#work-carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        <!-- Carousel wrapper -->
+                     </div>
+
+                    <div class="container-fluid about-heading-section">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="fw-bold about-heading-text">Projects</h2>
+                                <h1 class="fw-bold about-heading-text">Recent Projects</h1>
+                                <p class="about-heading-text">
+                                    Here are some of my recent projects
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-sm rounded-5">
+
                     </div>
                 </section>
+
+                <section id="contact" class="text-center about-section">
+                    <div class="container-fluid about-heading-section">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="fw-bold about-heading-text">Contact</h2>
+                                <h1 class="fw-bold about-heading-text">Contact Me</h1>
+                                <p class="about-heading-text">
+                                    Contact me via email through the form below
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>                                    
             </main>
        </div>
 
