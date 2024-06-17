@@ -102,6 +102,7 @@ textarea {
     height: 30vh;
     border: black;
     border-radius: 0.25rem;
+    resize: none;
 }
 
 .contact-button {
