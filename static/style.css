@@ -67,3 +67,18 @@ p a {
     padding: 2vw;
 }
 
+.contact-panel {
+    background-color: #1c2e4a;
+    width: 75%;
+    padding-block: 3vh;
+    padding-inline: 5vw;
+}
+
+.contact-text-info {
+    color: #f0f0f0;
+}
+
+label, input, textarea {
+    display:flex;
+    
+}
