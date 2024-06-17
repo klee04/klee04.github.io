@@ -28,7 +28,6 @@
             window.onload = function() {
                 document.getElementById('contact-form').addEventListener('submit', function(event) {
                     event.preventDefault();
-                    // these IDs from the previous steps
                     emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this)
                     .then(() => {
                         console.log('SUCCESS!');
@@ -416,7 +415,6 @@
 
                     <form action="" method="POST" id="contact-form">
                         <div class="container-sm rounded-5 contact-panel">
-                            <div id="error"></div>
                             <div class="form-content">
                                 <div class="form-item">
                                     <label for="name">Full Name:</label>
@@ -437,6 +435,7 @@
                                 <div class="form-item">
                                     <button type="submit" class="contact-button bg-primary">Send Message</button>
                                 </div>
+                                <div id="error"></div>
                             </div>
                         </div>
                     </form>
