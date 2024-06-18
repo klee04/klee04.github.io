@@ -35,18 +35,17 @@ window.onload = function() {
             displayMessage()
         }
 
-        emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this)
-        .then(() => {
+        emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this).then(
+        () => {
+            console.log('SUCCESS!');
             errorMessages.push('Email sent successfully!')
             displayMessage()
-            console.log('SUCCESS!');            
         }, 
         (error) => {
+            console.log('FAILED...', error);           
             errorMessages.push('Email failed to send. Please try again!')
-            displayMessage()
-            console.log('FAILED...', error);            
+            displayMessage() 
         });
-        
     });
 }
 
