@@ -34,16 +34,17 @@ window.onload = function() {
         if (errorMessages.length > 0) {
             displayMessage()
         }
-
-        emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this).then(
-        () => {
-            console.log('SUCCESS!');
-            alert('Email sent successfully!');
-        }, 
-        (error) => {
-            console.log('FAILED...', error);           
-            alert('Failed to send email. Please try again!');
-        });
+        else {
+            emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this).then(
+                () => {
+                    console.log('SUCCESS!');
+                    alert('Email sent successfully!');
+                }, 
+                (error) => {
+                    console.log('FAILED...', error);           
+                    alert('Failed to send email. Please try again!');
+                });
+        }
     });
 }
 
