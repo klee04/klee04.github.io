@@ -25,22 +25,28 @@ window.onload = function() {
             errorMessages.push('Message is required')
         }
 
-
-        if (errorMessages.length === 0) {
-            emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this)
-            .then(() => {
-                console.log('SUCCESS!');
-                errorMessages.push('Email sent successfully!')
-            }, 
-            (error) => {
-                console.log('FAILED...', error);
-                errorMessages.push('Email failed to send. Please try again!')
-            });
+        function displayMessage() {
+            event.preventDefault()
+            errorElement.style.display = 'inline'
+            errorElement.innerText = errorMessages.join(', ')
         }
+
+        if (errorMessages.length > 0) {
+            displayMessage()
+        }
+
+        emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this)
+        .then(() => {
+            errorMessages.push('Email sent successfully!')
+            displayMessage()
+            console.log('SUCCESS!');            
+        }, 
+        (error) => {
+            errorMessages.push('Email failed to send. Please try again!')
+            displayMessage()
+            console.log('FAILED...', error);            
+        });
         
-        event.preventDefault()
-        errorElement.style.display = 'inline'
-        errorElement.innerText = errorMessages.join(', ')
     });
 }
 
