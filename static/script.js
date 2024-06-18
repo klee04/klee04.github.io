@@ -37,14 +37,15 @@ window.onload = function() {
         else {
             emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this).then(
                 () => {
-                    console.log('SUCCESS!');
                     alert('Email sent successfully!');
+                    console.log('SUCCESS!');
                 }, 
                 (error) => {
+                    alert('Email failed to send');
                     console.log('FAILED...', error);           
-                    alert('Failed to send email. Please try again!');
                 });
         }
+
     });
 }
 
