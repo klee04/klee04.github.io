@@ -31,13 +31,6 @@
 
     <body> 
        <div class="container-fluid px-0">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand">Keon Lee's Portfolio</a>
-                </div>
-            </nav>
-
             <!-- Home Section -->
             <header class="py-5 hero">
                 <div class="container-fluid">
@@ -51,6 +44,37 @@
                     </div>
                 </div>
             </header>
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-md fixed-top bg-transparent navbar-dark sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Keon Lee's Portfolio</a>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav justify-content-end">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#about">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#work">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Me</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <a class="btn btn-primary" role="button" href="static/KeonLeeResume.pdf" download="KeonLeeResume">
+                        <img src="static/img/resumedownloadicon.png" style="height: 18px; width: 18px;">
+                        Resume Download
+                    </a>                
+                </div>
+            </nav>
 
             <!-- About Section -->
             <main>
@@ -103,7 +127,7 @@
                         </div>
                     </div>
 
-                    <div class="container-fluid about-heading-section">
+                    <div id="skills" class="container-fluid about-heading-section">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-6">
                                 <h2 class="fw-bold about-heading-text">Skills</h2>
@@ -203,7 +227,7 @@
                         </div>
                     </div>
 
-                    <div class="container-fluid about-heading-section">
+                    <div id="work" class="container-fluid about-heading-section">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-6">
                                 <h2 class="fw-bold about-heading-text">Work</h2>
@@ -285,7 +309,7 @@
                         </div>
                      </div>
 
-                    <div class="container-fluid about-heading-section">
+                    <div id="projects" class="container-fluid about-heading-section">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-6">
                                 <h2 class="fw-bold about-heading-text">Projects</h2>

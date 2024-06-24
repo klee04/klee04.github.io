@@ -35,7 +35,6 @@ window.onload = function() {
             displayMessage()
         }
         else {
-            alert('Your message has been sent!')
             emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this).then(
                 () => {
                     console.log('SUCCESS!');
