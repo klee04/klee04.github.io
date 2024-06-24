@@ -35,15 +35,14 @@ window.onload = function() {
             displayMessage()
         }
         else {
-            emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this).then(
-                () => {
-                    console.log('SUCCESS!');
-                }, 
-                (error) => {
-                    console.log('FAILED...', error);           
-                });
+            event.preventDefault();
+            emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
         }
 
     });
 }
-
