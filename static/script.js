@@ -35,13 +35,12 @@ window.onload = function() {
             displayMessage()
         }
         else {
+            alert('Your message has been sent!')
             emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this).then(
                 () => {
-                    alert('Email sent successfully!');
                     console.log('SUCCESS!');
                 }, 
                 (error) => {
-                    alert('Email failed to send');
                     console.log('FAILED...', error);           
                 });
         }
