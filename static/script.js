@@ -31,6 +31,13 @@ window.onload = function() {
             errorElement.innerText = errorMessages.join(', ')
         }
 
+        function clearText() {
+            event.target.name.value = ''
+            event.target.email.value = ''
+            event.target.subject.value = ''
+            event.target.message.value = ''
+        }
+
         if (errorMessages.length > 0) {
             displayMessage()
         }
@@ -38,8 +45,13 @@ window.onload = function() {
             event.preventDefault();
             emailjs.sendForm('service_czldkd4', 'template_ln7ucnw', this)
                     .then(() => {
+                        errorMessages.push('Message sent successfully!');
+                        displayMessage();
                         console.log('SUCCESS!');
+                        clearText();
                     }, (error) => {
+                        errorMessages.push('Message failed to send');
+                        displayMessage();
                         console.log('FAILED...', error);
                     });
         }
