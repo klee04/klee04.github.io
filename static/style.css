@@ -57,7 +57,6 @@ p a {
 
 .about-panel-section {
     background-color: #1c2e4a;
-    padding: 5vw;
 }
 
 .about-main-list {
@@ -72,7 +71,14 @@ p a {
 .about-skill-icon {
     width: 5rem;
     height: 5rem;
+    transition: transform 0.2s;
+
 }
+
+.about-skill-icon:hover {
+    transform: scale(1.2);
+}
+
 
 .about-carousel {
     background-color: #152238;
@@ -86,6 +92,12 @@ p a {
 
 .logo {
     height: 40%;
+    vertical-align: middle;
+}
+
+.work-skill {
+    background-color:#5D76A9;
+    font-size: 0.9rem;
 }
 
 .contact-panel {
