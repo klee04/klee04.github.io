@@ -1,6 +1,6 @@
 body {
     background-color: #152238;
-    font-family: sans-serif;
+    font-family: Arial;
     margin: 0;
     padding: 0;
     color: #f0f0f0;
@@ -55,14 +55,23 @@ p a {
     color: #f0f0f0
 }
 
+
 .about-panel-section {
     background-color: #1c2e4a;
+    width: 80%;
 }
 
 .about-main-list {
     color: #f0f0f0;
     text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.3;
 }
+
+.about-list-text {
+    font-size: 1.3rem;
+}
+
 
 .about-skill-text {
     color: #f0f0f0;
