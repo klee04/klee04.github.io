@@ -1,99 +1,163 @@
 body {
-    overflow: auto;
-    background-color: white;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    background-color: #152238;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Larger screens */
-@media (min-width: 992px) {
-    body {
-      font-size: 18px;
-    }
-  } 
-  
-  /* Smaller tablets and mobiles */
-  @media (max-width: 768px) {
-    body {
-      font-size: 14px;
-    }
-  }
-
-.homepage-container {
+.hero {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
     background-image: linear-gradient(to bottom right, red, yellow);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0; 
-    height: 100vh;
-    width: 100%;
-    font-size: 4rem;
 }
 
-.homepage-text {
-    color: white;
-    text-align: left;
+.hero-text {
+    font-size: 5.5rem;
 }
 
-.aboutMe-container {
-    background-color: #282E78;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 100vh;
-    left: 0;  
-    height: 100vh;
-    width: 100%;   
-    font-size: 1.5rem;
+.navbar {
+    background-color: #152238;
 }
 
-.aboutMe-text {
-    color: white;
-    text-align: center;
+.nav-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 1vh 1vw;
 }
 
-h2.aboutMe-text {
+.about-section {
+    background-color: #152238;
+}
+
+.about-heading-section {
+    padding-top: 15vh;
+}
+
+h2.about-heading-text {
     color: #5D76A9;
 }
 
+.about-heading-text {
+    color: #f0f0f0;
+}
+
+p.about-heading-text {
+    font-size: 1rem;
+}
+
 p a {
-    color: white;
-
+    color: #f0f0f0
 }
 
-.aboutMeBox-subcontainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: #5D76A9;
-    color: white;
-    width: 75%;
-    height: 50%
+.about-panel-section {
+    background-color: #1c2e4a;
+    width: 80%;
 }
 
-.aboutMeBox-list {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    color: white;
-    width: 75%;
+.about-main-list {
+    color: #f0f0f0;
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.3;
 }
 
-img {
-    border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
-    margin: 0.5rem;
+.about-list-text {
+    font-size: 1.3rem;
 }
 
 
+.about-skill-text {
+    color: #f0f0f0;
+}
 
+.about-skill-icon {
+    width: 5rem;
+    height: 5rem;
+    transition: transform 0.2s;
+
+}
+
+.about-skill-icon:hover {
+    transform: scale(1.2);
+}
+
+
+.about-carousel {
+    background-color: #152238;
+    padding: 2vw;
+}
+
+.about-carousel-item {
+    background-color: #1c2e4a;
+    height: 75vh;
+}
+
+.logo {
+    height: 40%;
+}
+
+.work-skill {
+    background-color:#5D76A9;
+    font-size: 0.9rem;
+}
+
+.contact-panel {
+    background-color: #1c2e4a;
+    width: 40%;
+    padding-block: 3vh;
+    padding-inline: 3vw;
+}
+
+.contact-text-info {
+    color: #f0f0f0;
+}
+
+label{
+    display:flex;
+    width: 100%;
+    margin-bottom: 0.75vh;
+}
+
+input {
+    display:flex;
+    width: 100%;
+    padding: 0.75vh 0.75vw;
+    margin-bottom: 1.25vh;
+    border-radius: 0.25rem;
+}
+
+textarea {
+    display:flex;
+    width: 100%;
+    padding: 0.75vh 0.75vw;
+    margin-bottom: 1.25vh;
+    height: 30vh;
+    border: black;
+    border-radius: 0.25rem;
+    resize: none;
+}
+
+.contact-button {
+    color: #f0f0f0;
+    padding: 0.75vh 1.5vw;
+    margin-top: 1vh;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #152238;
+    padding-top: 4vh;
+}
+
+#error {
+    color: #f0f0f0;
+    font-size: 1rem;
+    margin-bottom: 1vh;
+}
