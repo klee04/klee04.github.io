@@ -14,21 +14,56 @@ body {
     justify-content: center;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to bottom right, red, yellow);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .hero-text {
     font-size: 5.5rem;
+}
+
+.textzoom {
+    transition: transform .2s;
+}
+
+.textzoom:hover {
+    transform: scale(1.1);
 }
 
 .navbar {
     background-color: #152238;
 }
 
+.nav-brand {
+    color: #f0f0f0;
+    font-size: 2rem;
+    padding: 1vh 2vw;
+}
+
 .nav-link {
     color: #f0f0f0;
     text-decoration: none;
-    padding: 1vh 1vw;
+    font-size: 1.5rem;
+    padding: 1vh 2vw;
+}
+
+.btn-text {
+    color: #f0f0f0;
+    font-size: 1rem;
 }
 
 .about-section {

@@ -12,8 +12,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- Scroll Animations -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         
         <!-- EmailJS SDK -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -28,6 +27,7 @@
         <!-- Custom CSS and JavaScript -->
         <link rel="stylesheet" href="static/style.css">
         <script src="static/script.js"></script>
+
     </head>
 
     <body> 
@@ -37,7 +37,7 @@
                 <div class="container-fluid">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-md-6 offset-md-2">
-                            <div class="text-left">
+                            <div class="text-left" data-aos="fade-left" data-aos-duration="2000">
                                 <h1 class="fw-bold text-white hero-text">Hello.</h1>
                                 <h2 class="fw-bold text-white hero-text">I'm Keon!</h2>
                             </div>
@@ -49,31 +49,35 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-md fixed-top navbar-dark sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Keon Lee's Portfolio</a>
-
+                    <div class="textzoom">
+                        <a class="navbar-brand" href="#" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">Keon Lee's Portfolio |</a>
+                    </div>
+                   
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav justify-content-end">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#about">About Me</a>
+                            <li class="nav-item textzoom">
+                              <a class="nav-link" href="#about" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">About Me</a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#skills">Skills</a>
+                            <li class="nav-item textzoom">
+                              <a class="nav-link" href="#skills" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">Skills</a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#work">Work</a>
+                            <li class="nav-item textzoom">
+                              <a class="nav-link" href="#work" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">Work</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">Projects</a>
+                            <li class="nav-item textzoom">
+                                <a class="nav-link" href="#projects" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">Projects</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact Me</a>
+                            <li class="nav-item textzoom">
+                                <a class="nav-link" href="#contact" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">Contact Me</a>
                             </li>
                           </ul>
                     </div>
-                    <a class="btn btn-primary rounded-5" role="button" href="static/KeonLeeResume.pdf" download="KeonLeeResume">
-                        <img src="static/img/resumedownloadicon.png" style="height: 18px; width: 18px;">
-                        Resume Download
-                    </a>                
+                    <div class="textzoom">
+                        <a class="btn btn-primary rounded-5 btn-text" role="button" href="static/KeonLeeResume.pdf" download="KeonLeeResume" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="linear">
+                            <img src="static/img/resumedownloadicon.png" style="height: 18px; width: 18px;">
+                            Resume Download
+                        </a>  
+                    </div>              
                 </div>
             </nav>
 
@@ -83,9 +87,9 @@
                     <div class="container-fluid about-heading-section">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-6">
-                                <h2 class="fw-bold about-heading-text">About Me</h2>
-                                <h1 class="fw-bold about-heading-text">Who I am</h1>
-                                <p class="about-heading-text">
+                                <h2 class="fw-bold about-heading-text" data-aos="fade-left">About Me</h2>
+                                <h1 class="fw-bold about-heading-text" data-aos="fade-right">Who I am</h1>
+                                <p class="about-heading-text" data-aos="fade-left">
                                     You can reach me at my 
                                     <b><a href="mailto:keon.lee0404@gmail.com">Email</a></b>
                                     or 
@@ -96,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="container about-panel-section rounded-5 p-5">
+                    <div class="container about-panel-section rounded-5 p-5" data-aos="flip-left">
                         <div class="row">
                             <div class="col-sm-4 d-flex align-items-center justify-content-center">
                                 <img src="static/img/personalimage.jpg" class="img-fluid rounded-circle w-75" alt="Keon Lee Image">
@@ -107,9 +111,9 @@
                                     <li>
                                         <p class="about-list-text">
                                             I'm in my third year at <b>Queen's University</b> in 
-                                            Kingston, ON, majoring in <a style="text-decoration: none;" href="https://www.queensu.ca/physics/undergrad-studies/engineering-physics-program-overview/engineering-physics">
+                                            Kingston, ON, majoring in <a href="https://www.queensu.ca/physics/undergrad-studies/engineering-physics-program-overview/engineering-physics">
                                                 <b>Engineering Physics</b></a>
-                                            with a specialization in <b>Computing</b>.
+                                            and <b>Computing</b>.
                                         </p>
                                     </li>
                                     <li>
@@ -140,9 +144,9 @@
                     <div id="skills" class="container-fluid about-heading-section">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-6">
-                                <h2 class="fw-bold about-heading-text">Skills</h2>
-                                <h1 class="fw-bold about-heading-text">My Skillset</h1>
-                                <p class="about-heading-text">
+                                <h2 class="fw-bold about-heading-text" data-aos="fade-left">Skills</h2>
+                                <h1 class="fw-bold about-heading-text" data-aos="fade-right">My Skillset</h1>
+                                <p class="about-heading-text" data-aos="fade-left">
                                     Always learning new languages, heres what
                                     I know right now
                                 </p>
@@ -150,7 +154,7 @@
                         </div>
                     </div>
 
-                    <div class="container about-panel-section rounded-5 p-5">
+                    <div class="container about-panel-section rounded-5 p-5" data-aos="flip-right">
                         <!--
                         <h1>
                             <span class="fw-bold" style="color: white;">Coding Languages/Frameworks</span>
@@ -272,9 +276,9 @@
                     <div id="work" class="container-fluid about-heading-section">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-6">
-                                <h2 class="fw-bold about-heading-text">Work</h2>
-                                <h1 class="fw-bold about-heading-text">Recent Experience</h1>
-                                <p class="about-heading-text">
+                                <h2 class="fw-bold about-heading-text" data-aos="fade-left">Work</h2>
+                                <h1 class="fw-bold about-heading-text" data-aos="fade-right">Recent Experience</h1>
+                                <p class="about-heading-text" data-aos="fade-left">
                                     Here are some of my work experiences
                                 </p>
                             </div>
@@ -283,7 +287,7 @@
 
 
                     <!-- Work Experience Carousel -->
-                    <div class="container-sm rounded-5 about-carousel">
+                    <div class="container-sm rounded-5 about-carousel" data-aos="zoom-in-up">
                         <!-- Carousel wrapper -->
                         <div id="work-carousel" class="carousel slide" data-interval="false">
                             <!-- Indicators -->
@@ -359,16 +363,16 @@
                     <div id="projects" class="container-fluid about-heading-section">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-6">
-                                <h2 class="fw-bold about-heading-text">Projects</h2>
-                                <h1 class="fw-bold about-heading-text">Recent Projects</h1>
-                                <p class="about-heading-text">
+                                <h2 class="fw-bold about-heading-text" data-aos="fade-left">Projects</h2>
+                                <h1 class="fw-bold about-heading-text" data-aos="fade-right">Recent Projects</h1>
+                                <p class="about-heading-text" data-aos="fade-left">
                                     Here are some of my recent projects
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="container-sm rounded-5 about-carousel">
+                    <div class="container-sm rounded-5 about-carousel" data-aos="zoom-in-up">
                         <!-- Carousel wrapper -->
                         <div id="project-carousel" class="carousel slide" data-interval="false">
                             <!-- Indicators -->
@@ -453,9 +457,9 @@
                     <div class="container-fluid about-heading-section">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-6">
-                                <h2 class="fw-bold about-heading-text">Contact</h2>
-                                <h1 class="fw-bold about-heading-text">Contact Me</h1>
-                                <p class="about-heading-text">
+                                <h2 class="fw-bold about-heading-text" data-aos="fade-left">Contact</h2>
+                                <h1 class="fw-bold about-heading-text" data-aos="fade-right">Contact Me</h1>
+                                <p class="about-heading-text" data-aos="fade-left">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                                         <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
                                     </svg>
@@ -477,7 +481,7 @@
                         </div>
                     </div>
 
-                    <form action="" method="POST" id="contact-form">
+                    <form action="" method="POST" id="contact-form" data-aos="fade-up" data-aos-anchor-placement="top-center">
                         <div class="container-sm rounded-5 contact-panel">
                             <div class="form-content">
                                 <div class="form-item">
@@ -519,5 +523,10 @@
                 </div>
             </footer>
        </div>
+
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
