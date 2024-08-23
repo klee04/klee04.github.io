@@ -70,6 +70,14 @@ body {
     background-color: #152238;
 }
 
+.about-img {
+    transition: transform .2s;
+}
+
+.about-img:hover {
+    transform: scale(1.15);
+}
+
 .about-heading-section {
     padding-top: 15vh;
 }
