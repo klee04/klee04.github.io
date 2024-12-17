@@ -15,9 +15,8 @@ body {
 }
 
 section {
-    overflow-x: hidden;
+    overflow: hidden;
 }
-
 
 .hero {
     height: 100vh;
