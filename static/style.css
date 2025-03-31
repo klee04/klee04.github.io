@@ -186,6 +186,7 @@ p a {
 
 .contact-panel {
     background-color: #1c2e4a;
+    width: 80%;
     padding-block: 3vh;
     padding-inline: 3vw;
 }
@@ -236,4 +237,14 @@ textarea {
     color: #f0f0f0;
     font-size: 1rem;
     margin-bottom: 1vh;
+}
+
+.contact-info {
+    background-color:#5D76A9;
+    font-size: 1rem;
+}
+
+.contact-icon {
+    width: 2rem;
+    height: 2rem;
 }
